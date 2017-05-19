@@ -4,7 +4,6 @@
 
 #include "Parser.h"
 
-#include <exception>
 #include <sstream>
 
 #include "Predicates.h"
@@ -53,17 +52,6 @@ namespace Handmada {
     }
 
 
-    /*std::unique_ptr<IPredicate> Parser::E()
-    {
-        auto predicate = G();
-        if (type_ == LexType::OR) {
-            getNext();
-            return std::unique_ptr<IPredicate>(new OrCompoundPredicate(std::move(predicate), E()));
-        }
-        return std::move(predicate);
-    }*/
-
-
     std::unique_ptr<IPredicate> Parser::E()
     {
         std::vector<std::unique_ptr<Handmada::IPredicate>> predicates;
@@ -92,17 +80,6 @@ namespace Handmada {
             );
         }
     }
-
-
-    /*std::unique_ptr<IPredicate> Parser::G()
-    {
-        auto predicate = C();
-        if (type_ == LexType::AND) {
-            getNext();
-            return std::unique_ptr<IPredicate>(new AndCompoundPredicate(std::move(predicate), G()));
-        }
-        return std::move(predicate);
-    }*/
 
 
     std::unique_ptr<IPredicate> Parser::G()

@@ -257,7 +257,7 @@ namespace Handmada {
     {
         static_assert(std::is_default_constructible<T>::value, "Pointer element type must be default constructible");
 
-        T* tmp = T();
+        T* tmp = new T();
         get(stream, *tmp);
         ptr = std::unique_ptr<T>(tmp);
     }

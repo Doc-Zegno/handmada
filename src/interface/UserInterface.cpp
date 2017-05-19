@@ -5,7 +5,6 @@
 
 #include "UserInterface.h"
 
-#include <climits>
 #include <cstring>
 #include <unordered_set>
 
@@ -254,8 +253,6 @@ namespace Handmada {
                     console_.err("Error: identifier has already been declared");
                     console_.out();
                     continue;
-                } else {
-                    identifiers.insert(name);
                 }
 
                 console_.outNoLine("Enter attribute value: ");
@@ -283,6 +280,7 @@ namespace Handmada {
                     throw std::runtime_error("Error: extra lexemes were detected on the line");
                 }
 
+                identifiers.insert(name);
                 attributes.push_back(std::move(attribute));
             } catch (std::exception& e) {
                 console_.err(e.what());

@@ -3,12 +3,12 @@
 //
 
 
-#include "../../include/model/Predicates.h"
+#include "Predicates.h"
 
 #include <cstring>
 #include <iostream>
 
-#include "../../include/abstract/IPredicateVisitor.h"
+#include "IPredicateVisitor.h"
 
 
 namespace Handmada {
