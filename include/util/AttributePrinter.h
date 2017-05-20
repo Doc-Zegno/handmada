@@ -8,8 +8,8 @@
 
 #include <iostream>
 
-#include "abstract/IAttributeVisitor.h"
-#include "../model/Attributes.h"
+#include "IAttributeVisitor.h"
+#include "Attributes.h"
 
 
 namespace Handmada {

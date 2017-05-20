@@ -15,6 +15,10 @@
 
 
 namespace Handmada {
+    /**
+     * Provides a kit of methods of interacting with underlying input/output streams.
+     * The methods can be used to transparently handle possible input/output errors
+     */
     class Console
     {
     private:

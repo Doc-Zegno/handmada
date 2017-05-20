@@ -3,9 +3,9 @@
 //
 
 
-#include "../../include/util/AttributeValuePrinter.h"
+#include "AttributeValuePrinter.h"
 
-#include "../../include/misc/literal/BooleanLiteral.h"
+#include "BooleanLiteral.h"
 
 
 namespace Handmada {

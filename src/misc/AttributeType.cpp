@@ -3,7 +3,7 @@
 //
 
 
-#include "../../include/misc/AttributeType.h"
+#include "AttributeType.h"
 
 
 namespace Handmada {

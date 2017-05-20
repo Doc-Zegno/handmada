@@ -17,6 +17,7 @@ namespace Handmada {
     class IPredicateCalculatorVisitor;
 
 
+    /// This interface is used to generalize binary operations on predicates
     class IBinaryCalculator {
     public:
         virtual bool operator()(
@@ -31,6 +32,8 @@ namespace Handmada {
     };
 
 
+
+    /// This interface is used to generalize N-ary operations on predicates
     class IMultipleCalculator {
     public:
         virtual bool operator()(

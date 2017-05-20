@@ -3,7 +3,7 @@
 //
 
 
-#include "../../include/util/TestRequirementPrinter.h"
+#include "TestRequirementPrinter.h"
 
 
 namespace Handmada {

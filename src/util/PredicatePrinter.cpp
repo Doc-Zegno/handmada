@@ -4,7 +4,6 @@
 
 
 #include "PredicatePrinter.h"
-#include "BooleanLiteral.h"
 #include "AttributeValuePrinter.h"
 #include "PredicateCalculatorPrinter.h"
 

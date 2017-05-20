@@ -11,6 +11,9 @@
 
 namespace Handmada {
     namespace Literal {
+        /**
+         * This literal is used for formatting by Console objects
+         */
         class WidthLiteral
         {
         private:

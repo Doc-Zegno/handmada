@@ -6,7 +6,7 @@
 #define EQUEUE_V2_IREQUIREMENTVISITOR_H
 
 
-#include "../model/ConcreteRequirements.h"
+#include "ConcreteRequirements.h"
 
 
 namespace Handmada {

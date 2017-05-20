@@ -32,6 +32,11 @@ namespace Handmada {
     };
 
 
+
+    /**
+     * A bit overcomplicated implementation of IDataBaseController.
+     * Swaps session data into files
+     */
     class SimpleController : public IDataBaseController
     {
     private:
@@ -150,8 +155,14 @@ namespace Handmada {
         virtual ServiceIterator getServiceIterator() override;
         virtual RequirementIterator getServiceRequirementIterator(ServiceId id) override;
         virtual PredicateIterator getServicePredicateIterator(ServiceId id) override;
-        virtual void addServicePredicate(ServiceId id, BigPredicateDescriptor&& descriptor) override;
-        virtual void addServiceRequirement(ServiceId id, RequirementDescriptor&& descriptor) override;
+        virtual void addServicePredicate(
+                ServiceId id,
+                BigPredicateDescriptor&& descriptor
+        ) override;
+        virtual void addServiceRequirement(
+                ServiceId id,
+                RequirementDescriptor&& descriptor
+        ) override;
         virtual const RequirementDescriptor* getServiceRequirementByName(
                 ServiceId id, const std::string& name
         ) override;
@@ -163,7 +174,10 @@ namespace Handmada {
 
 
         virtual bool addSpecialist(const std::string& name, SpecialistId id) override;
-        virtual OpCode attachSpecialistToService(SpecialistId specialistId, ServiceId serviceId) override;
+        virtual OpCode attachSpecialistToService(
+                SpecialistId specialistId,
+                ServiceId serviceId
+        ) override;
         virtual bool containsSpecialist(const std::string& name) const override;
         virtual SpecialistIterator getSpecialistIterator() override;
 

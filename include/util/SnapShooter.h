@@ -10,6 +10,9 @@
 
 
 namespace Handmada {
+    /**
+     * Provides classes with a function that makes copies of poly vectors
+     */
     class SnapShooter
     {
     public:

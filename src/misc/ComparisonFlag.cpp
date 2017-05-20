@@ -3,7 +3,7 @@
 //
 
 
-#include "../../include/misc/ComparisonFlag.h"
+#include "ComparisonFlag.h"
 
 
 namespace Handmada {

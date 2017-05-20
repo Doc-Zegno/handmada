@@ -11,6 +11,11 @@
 
 namespace Handmada {
     namespace Prefab {
+        /**
+         * This list discards all requests that are pushed into it.
+         * Useful for preventing the system from pushing an undo-version
+         * of undo-request
+         */
         class NullUndoList : public IUndoList
         {
         public:

@@ -13,6 +13,9 @@
 
 namespace Handmada {
     namespace Prefab {
+        /**
+         * Uses std::list to implement IUndoList
+         */
         class SimpleUndoList : public IUndoList
         {
         private:

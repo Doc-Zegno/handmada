@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-#include "../abstract/IRequirementVisitor.h"
+#include "IRequirementVisitor.h"
 
 
 namespace Handmada {

@@ -3,8 +3,8 @@
 //
 
 
-#include "../../include/util/RequirementListBuilder.h"
-#include "../../include/model/ConcreteRequirements.h"
+#include "RequirementListBuilder.h"
+#include "ConcreteRequirements.h"
 
 
 namespace Handmada {

@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-#include "abstract/IAttributeVisitor.h"
+#include "IAttributeVisitor.h"
 
 
 namespace Handmada {

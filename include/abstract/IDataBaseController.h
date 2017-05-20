@@ -21,6 +21,10 @@
 
 
 namespace Handmada {
+    /**
+     * Interface of data base controller.
+     * Declares tons of various methods that might be used by instances of IFrontend
+     */
     class IDataBaseController
     {
     public:
@@ -37,7 +41,15 @@ namespace Handmada {
         using SpecialistIterator = std::unique_ptr<IIterator<std::pair<const SpecialistId, Specialist>>>;
 
         // S w a p p i n g
+        /**
+         * Reads the dump files with previous session data
+         * and registers decoded entities for current session
+         */
         virtual void checkOut() = 0;
+        /**
+         * Encodes the internal state of running system and
+         * writes it into the dump files
+         */
         virtual void swap() = 0;
 
         // C h e c k i n g s
@@ -61,7 +73,10 @@ namespace Handmada {
         virtual void deleteMessageForUser(UserId id) = 0;
 
         // S e r v i c e    C o n t r o l
-        virtual bool addService(const std::string& serviceName, const std::string& description, ServiceId id) = 0;
+        virtual bool addService(
+                const std::string& serviceName,
+                const std::string& description, ServiceId id
+        ) = 0;
         virtual Service& getServiceById(ServiceId id) = 0;
         virtual ServiceIterator getServiceIterator() = 0;
         virtual size_t servicesAmount() const = 0;
@@ -72,16 +87,28 @@ namespace Handmada {
         virtual AttributeContainerPtr getUserAttributes(UserId id) = 0;
         virtual AttributeIterator getUserAttributeIterator(UserId id) = 0;
         virtual RequirementIterator getServiceRequirementIterator(ServiceId id) = 0;
-        virtual const RequirementDescriptor* getServiceRequirementByName(ServiceId id, const std::string& name) = 0;
+        virtual const RequirementDescriptor* getServiceRequirementByName(
+                ServiceId id,
+                const std::string& name
+        ) = 0;
         virtual PredicateIterator getServicePredicateIterator(ServiceId id) = 0;
-        virtual const BigPredicateDescriptor* getServicePredicateById(ServiceId serviceId, PredicateId predicateId) = 0;
+        virtual const BigPredicateDescriptor* getServicePredicateById(
+                ServiceId serviceId,
+                PredicateId predicateId
+        ) = 0;
         virtual size_t servicePredicatesAmount(ServiceId id) const = 0;
-        virtual void addServicePredicate(ServiceId id, BigPredicateDescriptor&& descriptor) = 0;
+        virtual void addServicePredicate(
+                ServiceId id,
+                BigPredicateDescriptor&& descriptor
+        ) = 0;
         virtual void addServiceRequirement(ServiceId id, RequirementDescriptor&& descriptor) = 0;
 
         // S p e c i a l i s t    C o n t r o l
         virtual bool addSpecialist(const std::string& name, SpecialistId id) = 0;
-        virtual OpCode attachSpecialistToService(SpecialistId specialistId, ServiceId serviceId) = 0;
+        virtual OpCode attachSpecialistToService(
+                SpecialistId specialistId,
+                ServiceId serviceId
+        ) = 0;
         virtual size_t specialistsAmount() const = 0;
         virtual SpecialistIterator getSpecialistIterator() = 0;
 

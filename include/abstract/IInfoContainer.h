@@ -10,6 +10,10 @@
 
 
 namespace Handmada {
+    /**
+     * The special interface which is used only by BasicFrontend to interact with its services.
+     * This interface is aimed to hide the underlying info container from services
+     */
     class IInfoContainer
     {
     public:

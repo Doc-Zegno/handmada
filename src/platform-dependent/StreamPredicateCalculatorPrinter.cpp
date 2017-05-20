@@ -5,7 +5,6 @@
 
 #include "StreamPredicateCalculatorPrinter.h"
 #include "Serializer.h"
-#include "MetaNumber.h"
 
 
 namespace Handmada {

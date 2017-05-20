@@ -7,7 +7,7 @@
 
 
 #include <memory>
-#include "../abstract/IAttribute.h"
+#include "IAttribute.h"
 
 
 namespace Handmada {

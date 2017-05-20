@@ -3,8 +3,8 @@
 //
 
 
-#include "util/AttributePrinter.h"
-#include "../../include/misc/literal/BooleanLiteral.h"
+#include "AttributePrinter.h"
+#include "BooleanLiteral.h"
 
 
 namespace Handmada {

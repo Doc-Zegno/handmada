@@ -21,7 +21,7 @@ namespace Handmada {
 
         virtual const std::string& name() const override;
         virtual AttributeType::Type type() const override;
-        virtual std::unique_ptr<Handmada::IAttribute> createAttribute() const override;
+
         virtual std::unique_ptr<IRequirement> clone() const override;
         virtual void accept(IRequirementVisitor& visitor) const override;
 
@@ -39,7 +39,7 @@ namespace Handmada {
 
         virtual const std::string& name() const override;
         virtual AttributeType::Type type() const override;
-        virtual std::unique_ptr<Handmada::IAttribute> createAttribute() const override;
+
         virtual std::unique_ptr<IRequirement> clone() const override;
         virtual void accept(IRequirementVisitor& visitor) const override;
 
@@ -60,7 +60,7 @@ namespace Handmada {
 
         virtual const std::string& name() const override;
         virtual AttributeType::Type type() const override;
-        virtual std::unique_ptr<IAttribute> createAttribute() const override;
+
         virtual std::unique_ptr<IRequirement> clone() const override;
         virtual void accept(IRequirementVisitor& visitor) const override;
 

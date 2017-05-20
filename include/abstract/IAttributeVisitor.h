@@ -6,10 +6,13 @@
 #define EQUEUE_V2_IVISITOR_H
 
 
-#include "../model/Attributes.h"
+#include "Attributes.h"
 
 
 namespace Handmada {
+    /**
+     * Declares a general interface of objects that are aimed to process instances of IAttribute
+     */
     class IAttributeVisitor
     {
     public:

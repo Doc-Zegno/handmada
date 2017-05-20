@@ -13,6 +13,13 @@
 
 namespace Handmada {
     namespace Prefab {
+        /**
+         * Provides classes with template of IIterator that is very simple to
+         * instantiate
+         * @tparam T type of objects that should be returned by iterator
+         * @tparam TIterator type of internal iterator
+         * @tparam TGetter function that is used to retrieve object pointer from iterator
+         */
         template<typename T, typename TIterator, typename TGetter>
         class SimpleIterator : public IIterator<T>
         {

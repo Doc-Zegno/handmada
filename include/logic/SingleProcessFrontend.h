@@ -10,6 +10,9 @@
 
 
 namespace Handmada {
+    /**
+     * Test version of frontend
+     */
     class SingleProcessFrontend : public BasicFrontend
     {
     public:

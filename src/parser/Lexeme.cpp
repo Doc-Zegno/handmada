@@ -3,7 +3,7 @@
 //
 
 
-#include "../../include/parser/Lexeme.h"
+#include "Lexeme.h"
 
 
 namespace Handmada {

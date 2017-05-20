@@ -19,6 +19,9 @@
 
 
 namespace Handmada {
+    /**
+     * BasicFrontend helper
+     */
     class Service
     {
     private:

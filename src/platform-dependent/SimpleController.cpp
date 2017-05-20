@@ -276,11 +276,6 @@ namespace Handmada {
                 crash();
                 return AttributeType::DUMMY;
             }
-            virtual std::unique_ptr<IAttribute> createAttribute() const override
-            {
-                crash();
-                return std::unique_ptr<IAttribute>();
-            }
             virtual std::unique_ptr<IRequirement> clone() const override
             {
                 crash();

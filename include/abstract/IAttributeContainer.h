@@ -10,6 +10,11 @@
 
 
 namespace Handmada {
+    /**
+     * Container adapter which is extensively used by all sorts of predicates.
+     * The main aim of introducing this interface is to hide the underlying container
+     * from predicates
+     */
     class IAttributeContainer
     {
     public:

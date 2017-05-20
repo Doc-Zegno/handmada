@@ -6,7 +6,6 @@
 #include "StreamPredicatePrinter.h"
 #include "MetaNumber.h"
 #include "Serializer.h"
-#include "StreamAttributePrinter.h"
 #include "StreamPredicateCalculatorPrinter.h"
 
 

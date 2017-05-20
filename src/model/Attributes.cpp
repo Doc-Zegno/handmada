@@ -5,8 +5,8 @@
 
 #include <iostream>
 #include <cstring>
-#include "../../include/model/Attributes.h"
-#include "abstract/IAttributeVisitor.h"
+#include "Attributes.h"
+#include "IAttributeVisitor.h"
 
 namespace Handmada {
     // S t r i n g

@@ -14,6 +14,10 @@
 
 
 namespace Handmada {
+    /**
+     * The main implementor of IFrontend interface.
+     * Processes requests and interacts with data base through controller
+     */
     class BasicFrontend : public IFrontend, public IRequestVisitor
     {
     private:

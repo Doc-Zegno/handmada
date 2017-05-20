@@ -12,6 +12,9 @@
 
 
 namespace Handmada {
+    /**
+     * Test version of frontend
+     */
     class TestFrontend : public BasicFrontend
     {
     private:

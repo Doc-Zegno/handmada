@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-#include "../abstract/IPredicateVisitor.h"
+#include "IPredicateVisitor.h"
 
 
 namespace Handmada {

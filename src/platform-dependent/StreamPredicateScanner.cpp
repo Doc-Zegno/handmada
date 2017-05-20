@@ -5,15 +5,11 @@
 
 #include "StreamPredicateScanner.h"
 
-#include <unistd.h>
-#include <cstdlib>
 #include <cstring>
-#include <cstdio>
 
 #include "Predicates.h"
 #include "StreamAttributeScanner.h"
 #include "StreamPredicateCalculatorScanner.h"
-#include "MetaNumber.h"
 #include "Serializer.h"
 
 

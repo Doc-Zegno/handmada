@@ -3,10 +3,8 @@
 //
 
 
-#include "../../include/parser/Lexer.h"
+#include "Lexer.h"
 
-#include <cstdio>
-#include <cstdlib>
 #include <cstring>
 #include <sstream>
 

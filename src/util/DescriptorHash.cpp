@@ -5,8 +5,6 @@
 
 #include "DescriptorHash.h"
 
-#include <string>
-
 
 namespace Handmada {
     size_t PredicateDescriptorHash::operator()(const BigPredicateDescriptor& descriptor) const

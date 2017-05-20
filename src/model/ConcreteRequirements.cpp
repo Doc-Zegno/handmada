@@ -3,8 +3,8 @@
 //
 
 
-#include "../../include/model/ConcreteRequirements.h"
-#include "../../include/abstract/IRequirementVisitor.h"
+#include "ConcreteRequirements.h"
+#include "IRequirementVisitor.h"
 
 
 namespace Handmada {
@@ -12,12 +12,6 @@ namespace Handmada {
     StringRequirement::StringRequirement(const std::string& name)
         : name_(name)
     { }
-
-
-    std::unique_ptr<Handmada::IAttribute> StringRequirement::createAttribute() const
-    {
-        return std::unique_ptr<Handmada::IAttribute>(new StringAttribute(name(), std::string()));
-    }
 
 
     void StringRequirement::accept(IRequirementVisitor& visitor) const
@@ -57,12 +51,6 @@ namespace Handmada {
     { }
 
 
-    std::unique_ptr<Handmada::IAttribute> NumberRequirement::createAttribute() const
-    {
-        return std::unique_ptr<Handmada::IAttribute>(new NumberAttribute(name(), DEFAULT_NUMBER));
-    }
-
-
     void NumberRequirement::accept(IRequirementVisitor& visitor) const
     {
         visitor.visit(*this);
@@ -98,12 +86,6 @@ namespace Handmada {
     BooleanRequirement::BooleanRequirement(const std::string& name, const std::string& question)
         : name_(name), question_(question)
     { }
-
-
-    std::unique_ptr<IAttribute> BooleanRequirement::createAttribute() const
-    {
-        return std::unique_ptr<Handmada::IAttribute>(new BooleanAttribute(name(), false));
-    }
 
 
     const std::string& BooleanRequirement::question() const
