@@ -1,0 +1,77 @@
+//
+// Created by syzegno on 28.04.17.
+//
+
+#ifndef EQUEUE_V2_METANUMBERS_H
+#define EQUEUE_V2_METANUMBERS_H
+
+
+namespace Handmada {
+    class MetaNumber
+    {
+    public:
+        MetaNumber() = delete;
+
+        enum Type {
+            INVALID,
+            EMPTY,
+            STRING_ATTRIBUTE,
+            NUMBER_ATTRIBUTE,
+            BOOLEAN_ATTRIBUTE,
+
+            STRING_REQUIREMENT,
+            NUMBER_REQUIREMENT,
+            BOOLEAN_REQUIREMENT,
+
+            NOT_PREDICATE,
+            BINARY_PREDICATE,
+            MULTIPLE_PREDICATE,
+            COMPARISON_PREDICATE,
+
+            OR_BINARY_CALCULATOR,
+            AND_BINARY_CALCULATOR,
+            OR_MULTIPLE_CALCULATOR,
+            AND_MULTIPLE_CALCULATOR,
+
+            ADD_PRIORITY_RULE_REQUEST,
+            ADD_SERVICE_REQUEST,
+            ADD_SPECIALIST_REQUEST,
+            ADD_USER_ATTRIBUTE_REQUEST,
+            REMOVE_USER_ATTRIBUTE_REQUEST,
+            ATTACH_SPECIALIST_REQUEST,
+            GET_MESSAGE_REQUEST,
+            GET_PRIORITY_RULE_REQUEST,
+            GET_SERVICE_DESCRIPTOR_REQUEST,
+            GET_SPECIALIST_DESCRIPTOR_REQUEST,
+            GET_USER_ATTRIBUTE_REQUEST,
+            GET_USER_DESCRIPTOR_REQUEST,
+            MAKE_APPOINTMENT_REQUEST,
+            REGISTER_USER_REQUEST,
+            SIGN_IN_REQUEST,
+            SIGN_OUT_REQUEST,
+
+            ADD_PRIORITY_RULE_RESPONSE,
+            ADD_SERVICE_RESPONSE,
+            ADD_SPECIALIST_RESPONSE,
+            ADD_USER_ATTRIBUTE_RESPONSE,
+            REMOVE_USER_ATTRIBUTE_RESPONSE,
+            ATTACH_SPECIALIST_RESPONSE,
+            GENERAL_RESPONSE,
+            GET_MESSAGE_RESPONSE,
+            GET_PRIORITY_RULE_RESPONSE,
+            GET_SERVICE_DESCRIPTOR_RESPONSE,
+            GET_SPECIALIST_DESCRIPTOR_RESPONSE,
+            GET_USER_ATTRIBUTE_RESPONSE,
+            GET_USER_DESCRIPTOR_RESPONSE,
+            MAKE_APPOINTMENT_RESPONSE,
+            MISSING_ATTRIBUTE_RESPONSE,
+            REGISTER_USER_RESPONSE,
+            REQUIREMENT_COLLISION_RESPONSE,
+            SIGN_IN_RESPONSE,
+            SIGN_OUT_RESPONSE,
+        };
+    };
+}
+
+
+#endif //EQUEUE_V2_METANUMBERS_H
